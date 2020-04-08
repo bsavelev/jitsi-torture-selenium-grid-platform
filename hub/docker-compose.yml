@@ -9,6 +9,7 @@ services:
     image: selenium/node-chrome:3.141.59-xenon
     volumes:
       - /dev/shm:/dev/shm
+      - /usr/share/jitsi:/usr/share/jitsi
     depends_on:
       - selenium-hub
     environment:

@@ -18,10 +18,8 @@ For each machine:
     ```
 4. Save files into `/usr/share/jitsi/resources`:
     ```sh
-    cd /usr/share/jitsi/resources
-    wget https://github.com/jitsi/jitsi-meet-torture/blob/master/resources/fakeAudioStream.wav?raw=true
-    mv fakeAudioStream.wav?raw=true fakeAudioStream.wav
-    wget wget https://media.xiph.org/video/derf/y4m/FourPeople_1280x720_60.y4m
+    wget -O /usr/share/jitsi/resources/fakeAudioStream.wav https://github.com/jitsi/jitsi-meet-torture/blob/master/resources/fakeAudioStream.wav?raw=true
+    wget -O /usr/share/jitsi/resources/FourPeople_1280x720_30.y4m https://media.xiph.org/video/derf/y4m/FourPeople_1280x720_60.y4m
     ```
 
 On the machine which will run the Selenium Grid Hub
